@@ -21,5 +21,17 @@ p stops
 #7. Print the number of stops there are in the array?
 p stops.length
 #8. Show as many ways as you can to return "Falkirk High" from the array?
+p stops[2]
+p stops[-5]
+p stops[2,1]
+p stops[2..2]
+p stops[2...3]
+
 #9. Reverse the positions of the stops in the array
+stops.reverse!
+p stops
+
 #10 Print out all the stops using a for loop
+for stop in stops
+  p stop
+end
