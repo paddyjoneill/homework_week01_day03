@@ -2,9 +2,11 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 
 #1. Add "Edinburgh Waverley" to the end of the array
 stops.push("Edinburgh Waverley")
+# stops << "Edinburgh Waverley"
 p stops
 #2. Add "Glasgow Queen St" to the start of the array
 stops.unshift("Glasgow Queen St")
+# stops.insert(0, "Glasgow Queen St")
 p stops
 #3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
 stops.insert(4, "Polmont")
@@ -20,12 +22,21 @@ stops.delete_at(index_pos)
 p stops
 #7. Print the number of stops there are in the array?
 p stops.length
+# stops.count
+# stops.size
 #8. Show as many ways as you can to return "Falkirk High" from the array?
 p stops[2]
 p stops[-5]
 p stops[2,1]
 p stops[2..2]
 p stops[2...3]
+p stops.at(2)
+p stops.fetch(2)
+for stop in stops
+  if stop == "Falkirk High"
+    p stops
+  end
+end
 
 #9. Reverse the positions of the stops in the array
 stops.reverse!
