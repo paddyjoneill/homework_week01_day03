@@ -82,7 +82,7 @@ p users["Erik"][:lottery_numbers]
 users["Erik"][:hometown] = "Edinburgh"
 p users["Erik"][:hometown]
 # 9. Add a pet dog to Erik called "Fluffy"
-users["Erik"][:pets] = {
+users["Erik"][:pets] << {
   :name => "Fluffy",
   :species => "dog"
 }

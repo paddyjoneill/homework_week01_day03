@@ -21,5 +21,4 @@ end
 
 def get_first_key(hash)
   hash.keys.first
-
 end
