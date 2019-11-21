@@ -88,7 +88,7 @@ users["Erik"][:pets] << {
 }
 p users["Erik"][:pets]
 # 10. Add another person to the users hash
-users = {    "Paddy" => {
+users["Paddy"] =  {
     :twitter => "paddyo",
     :lottery_numbers => [1, 2, 3, 4, 5, 6],
     :home_town => "St Helens",
@@ -99,5 +99,5 @@ users = {    "Paddy" => {
     },
     ]
     }
-  }
-p users["Paddy"]
+  
+p users
